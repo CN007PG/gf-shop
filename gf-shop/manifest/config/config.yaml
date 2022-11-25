@@ -1,0 +1,39 @@
+# web服务器.
+server:
+  address: ":8080"
+  serverRoot: "./resource/public/html/phone"
+  serverBuy:
+    address: ":8081"
+    serverRoot: "./resource/public/html/phone/items"
+  serverShop:
+    address: ":8000"
+    openapiPath: "/api.json"
+    swaggerPath: "/swagger"
+  serverList:
+    address: ":8001"
+    openapiPath: "/api.json"
+    swaggerPath: "/swagger"
+  serverAccount:
+    address: ":8003"
+    openapiPath: "/api.json"
+    swaggerPath: "/swagger"
+
+# 数据库
+database:
+  logger:
+    level: "all"
+    stdout: true
+    
+  default:
+    link:   "mysql:root:12345678@tcp(127.0.0.1:3306)/shop"
+    debug:  true
+
+# 日记
+logger:
+  level : "all"
+  stdout: true
+
+# 模板
+viewer:
+  Delimiters: ["${","}"]
+

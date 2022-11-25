@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册账号</title>
+</head>
+
+<body>
+<div id="bg_box">
+  <h2>注册账号</h2>
+  <form class="form-horizontal " role="form"  action="/register" method="post"  >
+    <div class="input_box">
+      <input type="text" name="Nickname" placeholder="请输入用户名">
+    </div>
+    <div class="input_box">
+      <input type="text" name="Phone" placeholder="请输入电话">
+    </div>
+    <div class="input_box">
+      <input type="password" name="Password" placeholder="请输入新密码">
+    </div>
+    <div class="input_box">
+      <input type="password" name="Passwordagain" placeholder="再次请输入新密码">
+    </div>
+    <button>确认</button><br>
+  </form>
+</div>
+<h5>${ .tips }</h5>
+<a href="//127.0.0.1:8000">返回主页</a>
+</body>
+<script>
+  //
+  document.getElementById("bg_box").style.setProperty("display",'${ .display }');
+</script>
+</html>

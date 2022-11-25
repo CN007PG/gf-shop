@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城主页</title>
+</head>
+
+<body>
+${ .tips }
+这里是商城主页
+<div id="bg_box">
+<a href="//127.0.0.1:8000/login">登录</a>
+<a href="//127.0.0.1:8000/changepassword">修改密码</a>
+<a href="//127.0.0.1:8000/register">注册</a>
+</div>
+<div id="logout_box">
+    <form class="form-horizontal " role="form"  action="/logout" method="post"  >
+        <button>退出</button><br>
+    </form>
+</div>
+${ .err }
+</body>
+<script>
+    //
+    document.getElementById("bg_box").style.setProperty("display",'${ .display }');
+    document.getElementById("logout_box").style.setProperty("display",'${ .logout_display }');
+</script>
+</html>

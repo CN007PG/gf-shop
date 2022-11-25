@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>登录</title>
+</head>
+<body>
+<div id="bg_box">
+  <h2>登录界面</h2>
+  <form class="form-horizontal " role="form"  action="/login" method="post"  >
+    <div class="input_box">
+      <input type="text" name="Nickname" placeholder="请输入用户名">
+    </div>
+    <div class="input_box">
+      <input type="password" name="Password" placeholder="请输入密码">
+    </div>
+    <button>登录</button><br>
+  </form>
+  <h5>${ .tips }</h5>
+  <a href="//127.0.0.1:8000">返回主页</a>
+</div>
+</body>
+</html>
